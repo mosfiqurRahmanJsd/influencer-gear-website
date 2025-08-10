@@ -29,9 +29,6 @@ body {
     cursor: pointer;
 }
 
-img {
-    width: 100%;
-}
 
 
 
@@ -115,6 +112,24 @@ nav {
     background-size: 100%;
 }
 
+.hero-img img {
+    width: 100%;
+}
+
+
+/* sponsor styles */
+.sponsor {
+    padding: 36px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 100px;
+}
+
+
+
 
 
 
@@ -146,6 +161,11 @@ nav {
     .hero-img {
         width: 90%;
   
+    }
+
+    .sponsor {
+        flex-wrap: wrap;
+        gap: 60px;
     }
 
 }
