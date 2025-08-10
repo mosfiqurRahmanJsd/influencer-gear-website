@@ -18,6 +18,21 @@ body {
     margin: 0 auto;
 }
 
+.primary-btn {
+    border-radius: 41px;
+    background-color: rgba(224, 44, 109, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
 
 
 
@@ -62,6 +77,45 @@ nav {
 }
 
 
+/* herobox styles */
+.herobox {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 69px;
+}
+
+.hero-content h1 {
+    color: rgba(58, 58, 58, 1);
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    color: rgba(58, 58, 58, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.hero-content {
+    width: 40%;
+}
+
+.hero-img {
+    width: 33%;
+    background-image: url('./../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    min-height: 475px;
+    background-position: center center;
+    background-size: 100%;
+}
+
+
 
 
 
@@ -70,7 +124,7 @@ nav {
 /* responsive web design
  medium mobile or tablet device
 */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
     .burger-menu {
         display: block;
     }
@@ -79,5 +133,19 @@ nav {
         display: none;
     }
 
+    .herobox {
+        flex-direction: column-reverse;
+        gap: 24px;
+        text-align: center;
+    }
 
- }
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-img {
+        width: 90%;
+  
+    }
+
+}
